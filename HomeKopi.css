@@ -54,14 +54,15 @@ body {
     /* background-color: rgba(255, 155, 108, 0.059); */
     backdrop-filter: blur(10px);
     color: white;
-    padding: 12px 0 ;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    padding: 15px 0 ;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
     animation: fadeinnav 1s;
 }
 
 .NavBar .Logo {
     margin-left: 40px;
+    font-size: 25px;
 }
 
 .NavBar .Logo .Lokal{
@@ -139,7 +140,6 @@ body {
     margin-bottom: 0;
     font-size: 60px;
     color: white;
-    text-shadow: 0px 0px 10px rgb(188, 188, 188);
 }
 
 .Konten h2 .Lokal{
