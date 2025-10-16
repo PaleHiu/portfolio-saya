@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+        to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeinnav {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Lilita One;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.918), rgba(61, 33, 15, 0.841)), url(BGKopi.jpg);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    background-size: cover;
+    color: black;
+    margin: 0 10%;
+}
+
+.NavBar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: linear-gradient(rgba(53, 43, 7, 0.644), rgba(119, 77, 22, 0.539));
+    /* background-color: rgba(255, 155, 108, 0.059); */
+    backdrop-filter: blur(10px);
+    color: white;
+    padding: 15px 0 ;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    animation: fadeinnav 1s;
+}
+
+.NavBar .Logo {
+    margin-left: 40px;
+    font-size: 25px;
+}
+
+.NavBar .Logo .Lokal{
+    color: rgb(255, 181, 22);
+}
+
+.NavBar .Menu {
+    margin-right: 40px;
+    font-size: 20px;
+}
+
+.NavBar .Menu a{
+    font-family: Montserrat;
+    font-weight: bold;
+    margin: 0 10px;
+    font-size: 18px;
+    position: relative;
+    padding: 8px;
+    transition: color 0.3s ease;
+    
+}
+
+.NavBar .Menu a::after{
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    transform: scaleX(0); 
+    transform-origin: center;
+    transition: transform 0.4s ease-out;
+}
+
+.NavBar .Menu a:hover::after{
+    transform: scaleX(1);
+}
+
+.Menu a:hover {
+    color: #ffba58;
+}
+
+.Menu a{
+    text-decoration: none;
+    color: white;
+}
+
+/* BAGIAN KONTEN */
+
+.Konten {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    border-radius: 30px;
+    min-height: 900px;
+}
+
+.Konten .Welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 200px 100px;
+    border-radius: 30px;
+    /* background-color: rgb(14, 14, 14); */
+    background-color: rgba(255, 255, 255, 0.046);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 40px 10px rgba(105, 98, 91, 0.353);
+    animation: fadeIn 1s;
+}
+
+.Konten .Welcome h2 {
+    margin-bottom: 0;
+    font-size: 60px;
+    color: white;
+}
+
+.Konten h2 .Lokal{
+    color: rgb(255, 181, 22);
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.437);
+}
+
+.Konten p {
+    color: white;
+    font-size: 25px;
+    font-family: Montserrat;
+    text-shadow: 0px 0px 10px rgb(188, 188, 188);
+}
+
+
+
+
+/* SECTION BARU */
+
+.About{
+    margin-top: 100px ;
+    padding-top: 50px;
+}
+
+.Konten_Dua{
+    /* background-color: white; */
+    height: 100vh;
+    margin-top: 0;
+    justify-items: center;
+}
+
+.Konten_Dua .About_isi {
+    background-color: rgba(134, 134, 133, 0.216);
+    padding: 25px;
+    color: white;
+    border-radius: 20px;
+    justify-items: center;
+    align-content: center;
+    height: auto;
+    backdrop-filter: blur(5px);
+    width: 70%;
+    box-shadow: 0 0 40px 10px rgba(105, 98, 91, 0.353);
+}
+
+.Konten_Dua .About_isi h1{
+    font-size: 70px;
+    color: #ffba58;
+}
+
+.Konten_Dua .About_isi p{
+    margin-top: 20px;
+    text-align: justify;
+    padding: 0 150px;
+    font-family: Montserrat;
+    font-size: 20px;
+    text-shadow: 0px 0px 10px rgb(188, 188, 188);
+}
+
+footer {
+    text-align: center;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    background: #562b00;
+    padding: 20px;
+    font-size: 20px;
+    color: #ffffff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
